@@ -6,7 +6,7 @@ abstract class WheelsTransport extends Vehicles {
 
     @Override
     public void service() {
-
+        updateTyre();
     }
 
 }

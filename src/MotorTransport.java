@@ -10,6 +10,7 @@ abstract class MotorTransport extends WheelsTransport  {
 
     @Override
     public void service() {
-
+        updateTyre();
+        checkEngine();
     }
 }
