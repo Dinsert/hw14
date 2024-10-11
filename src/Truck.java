@@ -10,8 +10,7 @@ public class Truck extends MotorTransport   {
 
     @Override
     public void service() {
-        updateTyre();
-        checkEngine();
+        super.service();
         checkTrailer();
     }
 

@@ -1,4 +1,4 @@
-abstract class MotorTransport extends WheelsTransport  {
+abstract class MotorTransport extends WheelsTransport {
 
     public MotorTransport(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -10,7 +10,7 @@ abstract class MotorTransport extends WheelsTransport  {
 
     @Override
     public void service() {
-        updateTyre();
+        super.service();
         checkEngine();
     }
 }

@@ -1,4 +1,4 @@
-public class Vehicles implements Transport  {
+public class Vehicles implements Transport {
 
     private final String modelName;
     private final int wheelsCount;
@@ -22,6 +22,10 @@ public class Vehicles implements Transport  {
 
     @Override
     public void service() {
+        System.out.println("Обслуживаем " + modelName);
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
     }
 
 }

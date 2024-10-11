@@ -4,9 +4,4 @@ abstract class WheelsTransport extends Vehicles {
         super(modelName, wheelsCount);
     }
 
-    @Override
-    public void service() {
-        updateTyre();
-    }
-
 }
