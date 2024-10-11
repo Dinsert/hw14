@@ -1,4 +1,4 @@
-abstract class Vehicles {
+public class Vehicles implements Transport  {
 
     private final String modelName;
     private final int wheelsCount;
@@ -8,11 +8,6 @@ abstract class Vehicles {
         this.wheelsCount = wheelsCount;
     }
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-
-    }
-
     public String getModelName() {
         return modelName;
     }
@@ -20,4 +15,13 @@ abstract class Vehicles {
     public int getWheelsCount() {
         return wheelsCount;
     }
+
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+    }
+
+    @Override
+    public void service() {
+    }
+
 }
